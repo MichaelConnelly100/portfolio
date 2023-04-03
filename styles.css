@@ -23,10 +23,43 @@ body {
   z-index: auto;
 }
 
+.relative {
+    position: relative;
+}
+
+
+
+.nav-mobile {
+    position: absolute;
+    top: 100%;
+    left: -60px;
+    list-style: none;
+    background: white;
+    box-shadow: 0 0 3px 5px rgba(0,0,0,0.3);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-mobile-link {
+    text-decoration:none;
+}
+
 .nav-content {
   display: flex;
   list-style: none;
   font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        display: none;
+    }
 }
 
 .nav-content a {
